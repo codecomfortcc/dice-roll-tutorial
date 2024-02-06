@@ -1,5 +1,5 @@
 import getDots from "./getDots.js";
-
+import gameMaker from "./gameMaker.js";
 function animateRoll(dotsElement, randomNumber) {
   let currentIndex = 0;
   const animationInterval = setInterval(() => {
@@ -10,6 +10,7 @@ function animateRoll(dotsElement, randomNumber) {
     if (currentIndex === 30) {
       clearInterval(animationInterval);
       dotsElement.innerHTML = getDots(randomNumber);
+      gameMaker(randomNumber)
     }
   }, 100);
 }

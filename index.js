@@ -7,4 +7,5 @@ dice.addEventListener("click", () => {
   const randomNumber = Math.floor(Math.random() * 6) + 1;
   dotsElement.innerHTML = "";
   animateRoll(dotsElement, randomNumber);
+ 
 });
